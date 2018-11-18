@@ -15,7 +15,7 @@ web3.eth.getAccounts().then(function (accounts) {
         from: accounts[0],
         gas: 3400000
     })
-        .on('receipt', console.log)
-        .on('error', console.error)
+    .on('receipt', console.log)
+    .on('error', console.error)
 
 })

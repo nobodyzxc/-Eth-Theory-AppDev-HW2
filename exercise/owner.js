@@ -8,10 +8,10 @@ const address = fs.readFileSync('../address.txt').toString()
 
 let bank = new web3.eth.Contract(abi, address)
 
-web3.eth.getAccounts().then(async function (accounts) {
+web3.eth.getAccounts().then(function (accounts) {
 
-  let owner = await bank.methods
+  let owner = bank.methods
     .getOwner()
-    .call({ from: accounts[0] });
-  console.log(owner);
+    .call({ from: accounts[0] })
+    .then((owner) => { console.log(owner); });
 })

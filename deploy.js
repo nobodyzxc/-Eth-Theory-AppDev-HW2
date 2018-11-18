@@ -20,11 +20,12 @@ web3.eth.getAccounts().then(function (accounts) {
       gas: 3400000
     })
     .on("receipt", function(receipt) {
-      console.log(JSON.stringify(receipt, null, 4));
       fs.writeFileSync('./address.txt', receipt["contractAddress"]);
+      console.log(JSON.stringify(receipt, null, 4));
       console.log("部屬成功");
     })
     .on("error", function(error) {
       console.log("部屬失敗");
     });
+
 });

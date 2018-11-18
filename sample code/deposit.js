@@ -16,7 +16,7 @@ web3.eth.getAccounts().then(function (accounts) {
         gas: 3400000,
         value: web3.utils.toWei('3', 'ether')
     })
-        .on('receipt', console.log)
-        .on('error', console.error)
+    .on('receipt', console.log)
+    .on('error', console.error)
 
 })
