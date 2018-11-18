@@ -1,0 +1,11 @@
+{
+  "name": "hw2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:nobodyzxc/Eth-Theory-AppDev-HW2.git",
+  "author": "nobodyzxc <dici86.chen@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "web3": "^1.0.0-beta.36"
+  }
+}
